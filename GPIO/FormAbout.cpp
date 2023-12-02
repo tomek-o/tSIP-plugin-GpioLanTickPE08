@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------
-#include <vcl.h>
 #pragma hdrstop
+#include <vcl.h>
 
 #include "FormAbout.h"
 #include "Utils.h"

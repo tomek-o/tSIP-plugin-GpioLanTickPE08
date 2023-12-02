@@ -14,7 +14,7 @@
 		</Source>
 		<BCBPROJECT>
       <project version="10.0">
-        <property category="build.config" name="active" value="0"/>
+        <property category="build.config" name="active" value="1"/>
         <property category="build.config" name="count" value="1"/>
         <property category="build.config" name="excludedefaultforzero" value="0"/>
         <property category="build.config.0" name="builddir" value="Debug"/>
@@ -106,8 +106,7 @@
           <property category="win32.*.win32b.bcc32" name="option.I.arg.1" value="$(BDS)\include"/>
           <property category="win32.*.win32b.bcc32" name="option.I.arg.2" value="$(BDS)\include\dinkumware"/>
           <property category="win32.*.win32b.bcc32" name="option.I.arg.3" value="$(BDS)\include\vcl"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value="..\scintilla\include"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.5" value="..\lua\src"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value="."/>
           <property category="win32.*.win32b.bcc32" name="option.I.arg.merge" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.I.enabled" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.Q.enabled" value="1"/>
@@ -239,7 +238,7 @@
           <Parameters Name="Launcher"></Parameters>
           <Parameters Name="UseLauncher">False</Parameters>
           <Parameters Name="DebugCWD"></Parameters>
-          <Parameters Name="HostApplication">..\..\PaController\PaController\Release_Build\PaController.exe</Parameters>
+          <Parameters Name="HostApplication">..\..\tSIP\tSIP\Release_Build\tSIP.exe</Parameters>
           <Parameters Name="RemoteHost"></Parameters>
           <Parameters Name="RemotePath"></Parameters>
           <Parameters Name="RemoteParams"></Parameters>
@@ -269,9 +268,9 @@
     </BCBPROJECT>
 		<buildevents>
       <buildevent file="GpioLantick.bdsproj">
-        <postcompile mode="0" cancancel="-1" capture="-1" showconsole="0">copy $(OUTPUTDIR)\$(OUTPUTFILENAME) $(OUTPUTDIR)\..\..\..\PaController\PaController\Debug_Build\phone\$(OUTPUTFILENAME)
-copy $(OUTPUTDIR)\$(OUTPUTFILENAME) $(OUTPUTDIR)\..\..\..\PaController\PaController\Release_Build\phone\$(OUTPUTFILENAME)
-copy $(OUTPUTDIR)\$(OUTPUTNAME).tds $(OUTPUTDIR)\..\..\..\PaController\PaController\Release_Build\phone\$(OUTPUTNAME).tds
+        <postcompile mode="0" cancancel="-1" capture="-1" showconsole="0">copy $(OUTPUTDIR)\$(OUTPUTFILENAME) $(OUTPUTDIR)\..\..\..\tSIP\tSIP\Debug_Build\phone\$(OUTPUTFILENAME)
+copy $(OUTPUTDIR)\$(OUTPUTFILENAME) $(OUTPUTDIR)\..\..\..\tSIP\tSIP\Release_Build\phone\$(OUTPUTFILENAME)
+copy $(OUTPUTDIR)\$(OUTPUTNAME).tds $(OUTPUTDIR)\..\..\..\tSIP\tSIP\Release_Build\phone\$(OUTPUTNAME).tds
 </postcompile>
       </buildevent>
     </buildevents>

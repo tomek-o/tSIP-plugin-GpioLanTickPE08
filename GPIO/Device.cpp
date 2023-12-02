@@ -1,3 +1,5 @@
+#pragma hdrstop
+
 #include "Device.h"
 #include "Log.h"
 #include "ScopedLock.h"

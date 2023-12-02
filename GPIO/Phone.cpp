@@ -1,9 +1,11 @@
 //---------------------------------------------------------------------------
 
+#pragma hdrstop
+
 #define _EXPORTING
-#include "..\..\PaController\PaController\phone\Phone.h"
-#include "..\..\PaController\PaController\phone\PhoneSettings.h"
-#include "..\..\PaController\PaController\phone\PhoneCapabilities.h"
+#include "..\..\tSIP\tSIP\phone\Phone.h"
+#include "..\..\tSIP\tSIP\phone\PhoneSettings.h"
+#include "..\..\tSIP\tSIP\phone\PhoneCapabilities.h"
 #include "PhoneLocal.h"
 #include "Log.h"
 #include <assert.h>
@@ -100,7 +102,7 @@ void __stdcall SetCallbacks(void *cookie, CALLBACK_LOG lpLog, CALLBACK_CONNECT l
     lpConnectFn = lpConnect;
     lpKeyFn = lpKey;
     callbackCookie = cookie;
-    lpLogFn(callbackCookie, "Phone DLL for EX03 loaded\n");
+    lpLogFn(callbackCookie, "Plugin DLL for LanTick PE-0-8 loaded\n");
 }
 
 void __stdcall GetPhoneCapabilities(struct S_PHONE_CAPABILITIES **caps) {
